@@ -1,0 +1,110 @@
+:root{
+    --viridian: #6b9080ff;
+    --cambridge-blue: #a4c3b2ff;
+    --mint-green: #cce3deff;
+    --azure-web: #eaf4f4ff;
+    --mint-cream: #f6fff8ff;
+}
+
+:root{
+--viridian: hsla(154, 15%, 49%, 1);
+--cambridge-blue: hsla(147, 21%, 70%, 1);
+--mint-green: hsla(167, 29%, 85%, 1);
+--azure-web: hsla(180, 31%, 94%, 1);
+--mint-cream: hsla(133, 100%, 98%, 1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--azure-web);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--mint-green);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--viridian);
+    font-size: 24px;
+}
+
+h2 {
+    color: var(--cambridge-blue);
+    font-size: 18px;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    background-color: var(--mint-cream);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+    border: none;
+    background-color: var(--mint-cream);
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--mint-cream);
+    border: 2px solid var(--viridian);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--viridian);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--viridian);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--cambridge-blue);
+}
+
+.password-1, .password-2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--viridian);
+    margin-top: 10px;
+    background-color: var(--mint-cream);
+    padding: 10px;
+    border-radius: 5px;
+}
